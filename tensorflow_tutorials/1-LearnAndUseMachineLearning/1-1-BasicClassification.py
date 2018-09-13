@@ -2,6 +2,8 @@
 https://www.tensorflow.org/tutorials/keras/basic_classification
 """
 
+## Basic classification in Keras.
+
 # TensorFlow and tf.keras
 import tensorflow as tf
 from tensorflow import keras
