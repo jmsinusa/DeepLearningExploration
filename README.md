@@ -12,3 +12,10 @@
 1.4 Explore overfitting and underfitting.
 [tensorflow_tutorials/1-LearnAndUseMachineLearning/1-4-ExploreOverUnderFitting.py](tensorflow_tutorials/1-LearnAndUseMachineLearning/1-4-ExploreOverUnderFitting.py)
 
+1.5 Saving and Restoring models
+[tensorflow_tutorials/1-LearnAndUseMachineLearning/1-5-SavingAndRestoringModels.py](tensorflow_tutorials/1-LearnAndUseMachineLearning/1-5-SavingAndRestoringModels.py)
+
+## 2. Research and experimentation
+
+
+
