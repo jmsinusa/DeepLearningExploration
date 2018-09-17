@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114a6a5b-57f2-4028-aac1-032623cf61f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,54 +29,57 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="md" value="2" />
-          <entry key="py" value="9" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="337" />
+          <entry key="Python Console" value="368" />
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="9" />
-          <entry key="md" value="866" />
-          <entry key="py" value="3803" />
+          <entry key="md" value="918" />
+          <entry key="py" value="4625" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="866" />
+          <entry key="Markdown" value="918" />
           <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="4140" />
+          <entry key="Python" value="4993" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="841">
-                <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <first_editor relative-caret-position="987">
+                <caret line="36" selection-start-line="36" selection-end-line="36" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="95" column="19" lean-forward="true" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+            <state relative-caret-position="1133">
+              <caret line="218" column="70" selection-start-line="218" selection-start-column="70" selection-end-line="218" selection-end-column="70" />
+              <folding>
+                <element signature="e#600#609#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,14 +107,16 @@
         <option value="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-5-SavingAndRestoringModels.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/EagerExecIntro.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py" />
+        <option value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="97" />
-    <option name="y" value="2173" />
+    <option name="y" value="13" />
     <option name="width" value="3744" />
     <option name="height" value="2148" />
   </component>
@@ -415,20 +423,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="841">
-            <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
           <caret line="95" column="19" lean-forward="true" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="102" selection-start-line="102" selection-end-line="109" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1133">
+          <caret line="218" column="70" selection-start-line="218" selection-start-column="70" selection-end-line="218" selection-end-column="70" />
+          <folding>
+            <element signature="e#600#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="987">
+            <caret line="36" selection-start-line="36" selection-end-line="36" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -29,7 +29,10 @@ Eager execution provides an imperative, define-by-run interface for advanced ope
 [tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py)
 
 2.4 Custom layers
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py)
 
 2.5 Custom training: walkthrough
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py
 
+)
 
