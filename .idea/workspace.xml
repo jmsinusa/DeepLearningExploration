@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114a6a5b-57f2-4028-aac1-032623cf61f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-1-EagerExecIntro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,23 +26,23 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="md" value="2" />
-          <entry key="py" value="8" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="291" />
+          <entry key="Python Console" value="337" />
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="9" />
           <entry key="md" value="866" />
-          <entry key="py" value="3355" />
+          <entry key="py" value="3803" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
@@ -54,7 +50,7 @@
         <counts>
           <entry key="Markdown" value="866" />
           <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="3646" />
+          <entry key="Python" value="4140" />
         </counts>
       </usages-collector>
     </session>
@@ -76,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="872">
+              <caret line="95" column="19" lean-forward="true" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -112,7 +108,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="97" />
-    <option name="y" value="13" />
+    <option name="y" value="2173" />
     <option name="width" value="3744" />
     <option name="height" value="2148" />
   </component>
@@ -185,28 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EagerExecIntro">
-    <configuration name="1-1-BasicClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DeepLearningExploration" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-1-BasicClassification.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.2-3-CustomTrainingBasics">
     <configuration name="1-2-TextClassificationWithMovieReviews" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExploration" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -270,6 +245,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="2-3-CustomTrainingBasics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearningExploration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="EagerExecIntro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExploration" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -292,19 +288,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1-1-BasicClassification" />
       <item itemvalue="Python.1-2-TextClassificationWithMovieReviews" />
       <item itemvalue="Python.1-3-HousePriceRegression" />
       <item itemvalue="Python.1-4-ExploreOverUnderFitting" />
       <item itemvalue="Python.EagerExecIntro" />
+      <item itemvalue="Python.2-3-CustomTrainingBasics" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2-3-CustomTrainingBasics" />
         <item itemvalue="Python.EagerExecIntro" />
         <item itemvalue="Python.1-4-ExploreOverUnderFitting" />
         <item itemvalue="Python.1-3-HousePriceRegression" />
         <item itemvalue="Python.1-2-TextClassificationWithMovieReviews" />
-        <item itemvalue="Python.1-1-BasicClassification" />
       </list>
     </recent_temporary>
   </component>
@@ -414,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="89" selection-start-line="89" selection-end-line="96" selection-end-column="30" />
+        <state relative-caret-position="145">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -431,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="872">
+          <caret line="95" column="19" lean-forward="true" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
         </state>
       </provider>
     </entry>
