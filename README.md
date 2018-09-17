@@ -17,5 +17,19 @@
 
 ## 2. Research and experimentation
 
+Eager execution provides an imperative, define-by-run interface for advanced operations. Write custom layers, forward passes, and training loops with auto differentiation. Start with these notebooks, then read the eager execution guide.
+
+2.1 Eager execution
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-1-EagerExecIntro.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-1-EagerExecIntro.py)
+
+2.2 Automatic differentiation and gradient tape
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py)
+
+2.3 Custom training: basics
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py)
+
+2.4 Custom layers
+
+2.5 Custom training: walkthrough
 
 
