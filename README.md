@@ -32,7 +32,12 @@ Eager execution provides an imperative, define-by-run interface for advanced ope
 [tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py)
 
 2.5 Custom training: walkthrough
-[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py
+[tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py](tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py)
 
-)
+## 3. ML at production scale
 
+3.1. Build a linear model with Estimators
+
+This tutorial uses the tf.estimator API in TensorFlow to solve a benchmark binary classification problem. 
+Estimators are TensorFlow's most scalable and production-oriented model type.
+[tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py](tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py)
