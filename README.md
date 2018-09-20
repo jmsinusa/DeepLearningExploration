@@ -41,3 +41,7 @@ Eager execution provides an imperative, define-by-run interface for advanced ope
 This tutorial uses the tf.estimator API in TensorFlow to solve a benchmark binary classification problem. 
 Estimators are TensorFlow's most scalable and production-oriented model type.
 [tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py](tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py)
+
+3.2. How to build a simple text classifier with TF-Hub 
+
+[tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py](tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py)
