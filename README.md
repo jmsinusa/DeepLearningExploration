@@ -44,4 +44,9 @@ Estimators are TensorFlow's most scalable and production-oriented model type.
 
 3.2. How to build a simple text classifier with TF-Hub 
 
+TF-Hub is a platform to share machine learning expertise packaged in reusable resources, notably pre-trained modules. This tutorial is organized into two main parts.
+
+*1. Introduction: Training a text classifier with TF-Hub:* We will use a TF-Hub text embedding module to train a simple sentiment classifier with a reasonable baseline accuracy. We will then analyze the predictions to make sure our model is reasonable and propose improvements to increase the accuracy.
+*2. Advanced: Transfer learning analysis:* In this section, we will use various TF-Hub modules to compare their effect on the accuracy of the estimator and demonstrate advantages and pitfalls of transfer learning.
+
 [tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py](tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py)
