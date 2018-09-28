@@ -50,3 +50,10 @@ TF-Hub is a platform to share machine learning expertise packaged in reusable re
 *2. Advanced: Transfer learning analysis:* In this section, we will use various TF-Hub modules to compare their effect on the accuracy of the estimator and demonstrate advantages and pitfalls of transfer learning.
 
 [tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py](tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py)
+
+3.3 Build a Convolutional Neural Network using Estimators
+
+In this tutorial, you'll learn how to use layers to build a convolutional neural network model to recognize the handwritten digits in the MNIST data set.
+
+[tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNN.py](tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNN.py)
+
