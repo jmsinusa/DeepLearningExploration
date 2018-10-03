@@ -1,2 +1,5 @@
 venv/
 models/
+tmp/
+imgs/
+.ipynb_checkpoints/
