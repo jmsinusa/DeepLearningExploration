@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114a6a5b-57f2-4028-aac1-032623cf61f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking-func.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking-func.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/__init__.py" afterDir="false" />
@@ -37,21 +36,6 @@
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/video_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/video_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/video_demo_half.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/video_demo_half.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1a-60MinBlitz.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1a-60MinBlitz.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1b-Autograd.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1b-Autograd.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1c-NeuralNetworks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1c-NeuralNetworks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1d-TrainingAClassifier.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-1d-TrainingAClassifier.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-2-DataLoadingProcessing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-2-DataLoadingProcessing.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-3-PyTorchExamples.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-3-PyTorchExamples.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-4-TransferLearningTutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-4-TransferLearningTutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-5-SavingLoadModels.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/1-GettingStarted/1-5-SavingLoadModels.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-1-FinetuningTorchvision.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-1-FinetuningTorchvision.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-2-SpatialTransformerNetworks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-2-SpatialTransformerNetworks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-3-NeuralStyleTransfer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch_tutorials/2-Images/2-3-NeuralStyleTransfer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras/cnn_exploration/keras-mnist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/keras/cnn_exploration/keras-mnist.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras/cnn_exploration/mnist_autoencoder.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/keras/cnn_exploration/mnist_autoencoder.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras/cnn_exploration/mnist_autoencoder_day2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/keras/cnn_exploration/mnist_autoencoder_day2.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/models/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/models/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/models/AUTHORS" afterDir="false" />
@@ -2691,31 +2675,6 @@
       <change beforePath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/BUILD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/create_dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tutorials/rnn/quickdraw/train_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-1-BasicClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-1-BasicClassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-2-TextClassificationWithMovieReviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-2-TextClassificationWithMovieReviews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-3-HousePriceRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-3-HousePriceRegression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-4-ExploreOverUnderFitting.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-4-ExploreOverUnderFitting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-5-SavingAndRestoringModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/1-LearnAndUseMachineLearning/1-5-SavingAndRestoringModels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-1-EagerExecIntro.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-1-EagerExecIntro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-2-AutoDiffGradTape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-3-CustomTrainingBasics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-4-CustomLayers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/2-ResearchAndExperimentation_EagerExec/2-5-CustomTrainWalkthrough.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/.ipynb_checkpoints/3-3-BuildCNNs-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/.ipynb_checkpoints/3-3-BuildCNNs-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/.ipynb_checkpoints/3-3c-jupyter_cnn_tester-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/.ipynb_checkpoints/3-3c-jupyter_cnn_tester-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-1-LinearModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-2-TextClassifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNNs.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNNs.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3a-DebugCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3a-DebugCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3b-DebugCNN2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3b-DebugCNN2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3c-jupyter_cnn_tester.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3c-jupyter_cnn_tester.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/.ipynb_checkpoints/4-1-TextGenerationRNN-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/.ipynb_checkpoints/4-1-TextGenerationRNN-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/.ipynb_checkpoints/4-1a-ShakespeareKeras-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/.ipynb_checkpoints/4-1a-ShakespeareKeras-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-1-TextGenerationRNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-1-TextGenerationRNN.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-1a-ShakespeareKeras.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-1a-ShakespeareKeras.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-2-NeuralMachineTranslation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-2-NeuralMachineTranslation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-3-ImageCaptioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_tutorials/4-GenerativeModels/4-3-ImageCaptioning.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2739,6 +2698,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="cfg" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="ipynb" value="3" />
           <entry key="md" value="2" />
@@ -2749,7 +2709,7 @@
         <counts>
           <entry key="IPNB" value="3" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
@@ -2759,7 +2719,7 @@
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="9" />
           <entry key="md" value="1091" />
-          <entry key="py" value="8220" />
+          <entry key="py" value="9320" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
@@ -2767,27 +2727,44 @@
         <counts>
           <entry key="Markdown" value="1091" />
           <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="9042" />
+          <entry key="Python" value="10142" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="1678">
+              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+              <folding>
+                <element signature="e#49#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="1885">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+              <folding>
+                <element signature="e#55#67#0" expanded="true" />
+                <element signature="e#318#457#2" />
+                <marker date="1539644930368" expanded="false" signature="312:317" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/cfg/yolov3.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17603">
+              <caret line="607" column="12" lean-forward="true" selection-start-line="607" selection-start-column="12" selection-end-line="607" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -2804,6 +2781,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>TRAINING_URL</find>
+      <find>route</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2829,16 +2807,16 @@
         <option value="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3-BuildCNN.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/MNIST-data/3-3a-DebugCNN.py" />
         <option value="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3b-DebugCNN2.py" />
-        <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" />
         <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" />
+        <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3937" />
-    <option name="y" value="2173" />
-    <option name="width" value="3744" />
-    <option name="height" value="2148" />
+    <option name="x" value="3938" />
+    <option name="y" value="2152" />
+    <option name="width" value="3742" />
+    <option name="height" value="2168" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2883,6 +2861,13 @@
               <item name="DeepLearningExploration" type="462c0819:PsiDirectoryNode" />
               <item name="PyTorch" type="462c0819:PsiDirectoryNode" />
               <item name="Example_implementation_yolo_tutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearningExploration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearningExploration" type="462c0819:PsiDirectoryNode" />
+              <item name="PyTorch" type="462c0819:PsiDirectoryNode" />
+              <item name="Example_implementation_yolo_tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="cfg" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3055,7 +3040,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="13" width="3744" height="2148" extended-state="6" />
+    <frame x="98" y="-8" width="3742" height="2168" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21119525" />
@@ -3253,17 +3238,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py">
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="1885">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#55#67#0" expanded="true" />
+            <element signature="e#318#457#2" />
+            <marker date="1539644930368" expanded="false" signature="312:317" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py">
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/cfg/yolov3.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="17603">
+          <caret line="607" column="12" lean-forward="true" selection-start-line="607" selection-start-column="12" selection-end-line="607" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1678">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+          <folding>
+            <element signature="e#49#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
