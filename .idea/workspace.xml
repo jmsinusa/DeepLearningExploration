@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114a6a5b-57f2-4028-aac1-032623cf61f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" afterDir="false" />
@@ -2722,7 +2721,7 @@
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="9" />
           <entry key="md" value="1091" />
-          <entry key="py" value="19664" />
+          <entry key="py" value="20485" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
@@ -2730,7 +2729,7 @@
         <counts>
           <entry key="Markdown" value="1091" />
           <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="20486" />
+          <entry key="Python" value="21307" />
         </counts>
       </usages-collector>
     </session>
@@ -2766,13 +2765,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="204" column="37" selection-start-line="204" selection-start-column="37" selection-end-line="204" selection-end-column="37" />
+            <state relative-caret-position="808">
+              <caret line="220" column="67" lean-forward="true" selection-start-line="220" selection-start-column="67" selection-end-line="220" selection-end-column="67" />
               <folding>
                 <element signature="e#65#77#0" expanded="true" />
-                <marker date="1540401542313" expanded="true" signature="476:481" ph="..." />
-                <marker date="1540401542313" expanded="true" signature="3715:4049" ph="..." />
-                <marker date="1540401542313" expanded="true" signature="9477:11024" ph="..." />
+                <marker date="1540412194752" expanded="true" signature="476:481" ph="..." />
+                <marker date="1540412194752" expanded="true" signature="3715:4049" ph="..." />
+                <marker date="1540412194752" expanded="true" signature="10624:12171" ph="..." />
               </folding>
             </state>
           </provider>
@@ -3277,13 +3276,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="204" column="37" selection-start-line="204" selection-start-column="37" selection-end-line="204" selection-end-column="37" />
+        <state relative-caret-position="808">
+          <caret line="220" column="67" lean-forward="true" selection-start-line="220" selection-start-column="67" selection-end-line="220" selection-end-column="67" />
           <folding>
             <element signature="e#65#77#0" expanded="true" />
-            <marker date="1540401542313" expanded="true" signature="476:481" ph="..." />
-            <marker date="1540401542313" expanded="true" signature="3715:4049" ph="..." />
-            <marker date="1540401542313" expanded="true" signature="9477:11024" ph="..." />
+            <marker date="1540412194752" expanded="true" signature="476:481" ph="..." />
+            <marker date="1540412194752" expanded="true" signature="3715:4049" ph="..." />
+            <marker date="1540412194752" expanded="true" signature="10624:12171" ph="..." />
           </folding>
         </state>
       </provider>

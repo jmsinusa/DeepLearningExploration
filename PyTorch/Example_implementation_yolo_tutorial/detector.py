@@ -174,7 +174,8 @@ class YOLO(object):
                 classes = classes
                 classes = classes.astype(np.int8)
                 classes_str = [self.class_names[class_] for class_ in classes]
-                print('Classes in this image:', list(set(classes_str)))
+                classes_unique = list(set(classes_str))
+                # print('Classes in this image:', list(set(classes_str)))
 
                 # Convert this_pred coordinates into original size
                 original_size = batch['original_image_size'][indx]
@@ -203,18 +204,40 @@ class YOLO(object):
                 img = batch['original_image'][indx]
 
                 #### SET OUT_FILEPATH
-                output_filepath = r'/data/tmp/test_out_%s.png' % batch['img_filename'][indx]
+
+                #### If dog, save in "dog" directory
+                dir_class = None
+                if 'dog' in classes_str:
+                    dir_class = 'dog'
+                elif 'person' in classes_str:
+                    dir_class = 'person'
+                elif 'car' in classes_str:
+                    dir_class = 'car'
+                if not dir_class:
+                    for class_ in ['bicycle', 'motorbike', 'bus', 'truck']:
+                        if class_ in classes_str:
+                            dir_class = 'other_transport'
+                if not dir_class:
+                    dir_class = classes_unique[0].replace(' ', '_')
+                    # try:
+                    #     dir_class = classes_unique[0].replace(' ','_')
+                    # except TypeError:
+                    #     print("ERROR selecting dir_class")
+                    #     print(classes_unique)
+                    #     print("----------------------------")
+                    #     print(batch['img_filename'][indx][0])
+                # Prepare output dir
+                output_dir = os.path.join(self.config_params['output_folder'], dir_class)
+                if not os.path.isdir(output_dir):
+                    os.makedirs(output_dir)
+                filename = os.path.splitext(batch['img_filename'][indx])[0] + '.png'
+                output_filepath = os.path.join(output_dir, filename)
+
+                print(output_filepath)
 
                 draw_output_images(img, this_pred, classes_str, self.config_params['colour_map'], output_filepath)
 
-                print('** IMAGE END **')
-            print("***BATCH END***")
 
-        # for sample in img_dataset:
-        #     pass
-        # results = self.infer(images)
-        # out_filenames = None
-        # self.write_images(images, results, out_filenames)
 
     def infer(self, images):
         pass
