@@ -4,9 +4,8 @@
     <list default="true" id="114a6a5b-57f2-4028-aac1-032623cf61f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/YOLO_v3_tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/YOLO_v3_hacking.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_v3_ayooshkathuria/pytorch_yolo_v3/__init__.py" afterDir="false" />
@@ -2688,15 +2687,17 @@
     <session id="378875797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.10" value="4" />
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="6" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -2722,7 +2723,7 @@
           <entry key="dummy" value="4" />
           <entry key="gitignore" value="9" />
           <entry key="md" value="1091" />
-          <entry key="py" value="16811" />
+          <entry key="py" value="18964" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
@@ -2730,7 +2731,7 @@
         <counts>
           <entry key="Markdown" value="1091" />
           <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="17633" />
+          <entry key="Python" value="19786" />
         </counts>
       </usages-collector>
     </session>
@@ -2752,12 +2753,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3074">
-              <caret line="111" column="68" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="68" />
+            <state relative-caret-position="3306">
+              <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
               <folding>
                 <element signature="e#55#67#0" expanded="true" />
-                <marker date="1539720180089" expanded="false" signature="312:317" ph="..." />
-                <marker date="1539720180089" expanded="true" signature="3757:4190" ph="..." />
+                <marker date="1540238382811" expanded="false" signature="312:317" ph="..." />
+                <marker date="1540238382811" expanded="true" signature="3757:4595" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2766,22 +2767,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="165" column="116" lean-forward="true" selection-start-line="165" selection-start-column="116" selection-end-line="165" selection-end-column="116" />
+            <state relative-caret-position="1765">
+              <caret line="319" selection-start-line="319" selection-end-line="319" />
               <folding>
                 <element signature="e#65#77#0" expanded="true" />
-                <marker date="1539886216348" expanded="true" signature="454:459" ph="..." />
-                <marker date="1539886216348" expanded="true" signature="2247:2581" ph="..." />
+                <marker date="1540337881211" expanded="true" signature="454:459" ph="..." />
+                <marker date="1540337881211" expanded="true" signature="2282:2616" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detect_tutorial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -2812,6 +2804,7 @@
       <find>upsam</find>
       <find>ups</find>
       <find>print</find>
+      <find>'key</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2839,17 +2832,17 @@
         <option value="$PROJECT_DIR$/tensorflow_tutorials/3-MLatProductionScale/3-3b-DebugCNN2.py" />
         <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet_clean.py" />
         <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py" />
-        <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" />
         <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detect_tutorial.py" />
+        <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py" />
         <option value="$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3937" />
-    <option name="y" value="2173" />
-    <option name="width" value="3744" />
-    <option name="height" value="2148" />
+    <option name="x" value="98" />
+    <option name="y" value="-8" />
+    <option name="width" value="3742" />
+    <option name="height" value="2168" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -3073,7 +3066,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="13" width="3744" height="2148" extended-state="6" />
+    <frame x="98" y="-8" width="3742" height="2168" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21119525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -3249,20 +3242,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet_clean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="114" column="40" lean-forward="true" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util_clean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3625">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet_clean.py" />
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util_clean.py" />
+    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detect_tutorial.py" />
     <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/darknet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -3275,20 +3257,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3074">
-          <caret line="111" column="68" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="68" />
+        <state relative-caret-position="3306">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
           <folding>
             <element signature="e#55#67#0" expanded="true" />
-            <marker date="1539720180089" expanded="false" signature="312:317" ph="..." />
-            <marker date="1539720180089" expanded="true" signature="3757:4190" ph="..." />
+            <marker date="1540238382811" expanded="false" signature="312:317" ph="..." />
+            <marker date="1540238382811" expanded="true" signature="3757:4595" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detect_tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -3301,12 +3276,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PyTorch/Example_implementation_yolo_tutorial/detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="165" column="116" lean-forward="true" selection-start-line="165" selection-start-column="116" selection-end-line="165" selection-end-column="116" />
+        <state relative-caret-position="1765">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
           <folding>
             <element signature="e#65#77#0" expanded="true" />
-            <marker date="1539886216348" expanded="true" signature="454:459" ph="..." />
-            <marker date="1539886216348" expanded="true" signature="2247:2581" ph="..." />
+            <marker date="1540337881211" expanded="true" signature="454:459" ph="..." />
+            <marker date="1540337881211" expanded="true" signature="2282:2616" ph="..." />
           </folding>
         </state>
       </provider>

@@ -38,7 +38,9 @@ class YOLO(object):
         self.load_model(config_file=config_file)
         if weights:
             self.load_weights(weights=weights)
-        # Move to GPU if available (or if use_cuda=True
+
+        # Move to GPU if available (or if use_cuda=True)
+        self.use_cuda = use_cuda
         if use_cuda:
             self.model = self.model.cuda()
 
@@ -81,7 +83,7 @@ class YOLO(object):
         self.class_names = names
         self.config_params['num_classes'] = len(names)
 
-    def config(self, output_folder=r'/data/detection/output', batch_size=1, min_confidence=0.5,
+    def config(self, output_folder=r'/data/detection/output', batch_size=2, min_confidence=0.5,
                nms_iou_thresh=0.4, input_res=608):
         """
         Updates self.config with config given above
@@ -115,11 +117,71 @@ class YOLO(object):
         """
         # Read directory using data loader
         img_dataset = ImagesDataset(image_dir)
-        for sample in img_dataset:
-            pass
-        results = self.infer(images)
-        out_filenames = None
-        self.write_images(images, results, out_filenames)
+        loader = DataLoader(img_dataset, batch_size=self.config_params['batch_size'], shuffle=True,
+                            collate_fn=collate_fn)
+        # Now work through batches
+        for batch in loader:
+            input_imgs = batch['trans_image']
+            if self.use_cuda:
+                input_imgs = input_imgs.cuda()
+
+            # print('MODEL', self.model)
+            prediction = self.model(input_imgs, self.use_cuda)
+            preds = util.write_results(prediction, self.config_params['min_confidence'],
+                                       self.config_params['num_classes'],
+                                       nms_conf=self.config_params['nms_iou_thresh'])
+            for indx in range(len(batch['trans_image'])):
+                # Now check to see if any images have been returned
+
+                this_pred = preds[preds[:, 0] == indx].cpu()
+                this_pred = this_pred.numpy()
+                if this_pred.shape[0] == 0:
+                    print("No detections for image", batch["img_filename"][indx])
+                    continue
+
+                # Now do something
+                print("This pred contains", this_pred.shape[0], "objects")
+                # Look up the classes detected
+                classes = this_pred[:, 7]
+                classes = classes
+                classes = classes.astype(np.int8)
+                classes_str = [self.class_names[class_] for class_ in classes]
+                print('Classes in this image:', list(set(classes_str)))
+
+                # Convert this_pred coordinates into original size
+                original_size = batch['original_image_size'][indx]
+                max_orig_size = np.max(original_size)
+                padding = batch['padding'][indx]
+
+                x1 = this_pred[:, 1]
+                y1 = this_pred[:, 2]
+                x2 = this_pred[:, 3]
+                y2 = this_pred[:, 4]
+
+                x1 = _resize_coords(x1, self.config_params['input_res'], max_orig_size)
+                x2 = _resize_coords(x2, self.config_params['input_res'], max_orig_size)
+                y1 = _resize_coords(y1, self.config_params['input_res'], max_orig_size)
+                y2 = _resize_coords(y2, self.config_params['input_res'], max_orig_size)
+                x1, x2, y1, y2 = _translate_coords(x1, x2, y1, y2, padding)
+                x1, x2, y1, y2 = _crop_to_original_size(x1, x2, y1, y2, original_size)
+
+                # Put these back into this_pred (OPTIONAL)
+                # this_pred[:, 1] = x1
+                # this_pred[:, 2] = y1
+                # this_pred[:, 3] = x2
+                # this_pred[:, 4] = y2
+
+                # Recall original image
+                img = batch['original_image'][indx]
+
+                print('** IMAGE END **')
+            print("***BATCH END***")
+
+        # for sample in img_dataset:
+        #     pass
+        # results = self.infer(images)
+        # out_filenames = None
+        # self.write_images(images, results, out_filenames)
 
     def infer(self, images):
         pass
@@ -195,7 +257,7 @@ def collate_fn(batch):
     trans_images_list = []
     for sample in batch:
         for key in samples.keys():
-            samples[key].append(sample['key'])
+            samples[key].append(sample[key])
         trans_images_list.append(sample['trans_image'])
     samples['trans_image'] = torch.stack(trans_images_list, 0, )
     return samples
@@ -207,6 +269,7 @@ class MakeSquare(object):
     """
     Pad the image to make square
     """
+
     def __init__(self, padding_val=0):
         """
         Pad shorter dimension with padding_val
@@ -231,7 +294,7 @@ class MakeSquare(object):
         diff2 = int(np.abs(np.floor((w - h) / 2.0)))
         if h > w:
             # pad width
-            padding = (diff1, 0, diff2, 0) #  left, top, right and bottom
+            padding = (diff1, 0, diff2, 0)  # left, top, right and bottom
         else:
             # pad height
             padding = (0, diff1, 0, diff2)
@@ -241,3 +304,24 @@ class MakeSquare(object):
 
         return image, padding
 
+
+def _resize_coords(coord, trans_size, orig_size):
+    factor = float(orig_size) / float(trans_size)
+    return np.round(coord * factor).astype(np.int16)
+
+
+def _translate_coords(x1, x2, y1, y2, padding):
+    left, top, right, bottom = padding
+    x1 -= left
+    x2 -= left
+    y1 -= top
+    y2 -= top
+    return x1, x2, y1, y2
+
+
+def _crop_to_original_size(x1, x2, y1, y2, orig_size):
+    x1[x1 < 0] = 0
+    x2[x2 > orig_size[0]] = orig_size[0]
+    y1[y1 < 0] = 0
+    y2[y2 > orig_size[1]] = orig_size[1]
+    return x1, x2, y1, y2

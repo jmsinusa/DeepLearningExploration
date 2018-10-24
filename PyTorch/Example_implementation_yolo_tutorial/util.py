@@ -112,16 +112,21 @@ def bbox_iou(box1, box2):
 def write_results(prediction, confidence, num_classes, nms_conf=0.4):
     """
 
-    :param prediction:
+    :param prediction: A single prediction
     :param confidence: Supress all with confidence below this
     :param num_classes: Number of classes
     :param nms_conf: NMS IOU threshold
-    :return:
+    :return: predictions for all images in batch.
+     Each prediction is eight numbers:
+        (index of image in batch, top-left corner x, top-left corner y, right-bottom corner x, right-bottom corner y,
+        confidence of box, score of the hightest class, class with highest score, )
     """
-    output = None  # Tutorial doesn't do this, but I think it's better.
 
     conf_mask = (prediction[:, :, 4] > confidence).float().unsqueeze(2)
     prediction = prediction * conf_mask  # Those without high confidence are set to zeros
+
+    # we transform the (center x, center y, height, width) attributes of our boxes,
+    # to (top-left corner x, top-left corner y, right-bottom corner x, right-bottom corner y)
 
     box_corner = prediction.new(prediction.shape)
     box_corner[:, :, 0] = (prediction[:, :, 0] - prediction[:, :, 2] / 2)
@@ -132,10 +137,13 @@ def write_results(prediction, confidence, num_classes, nms_conf=0.4):
 
     batch_size = prediction.size(0)
 
+    output = None
     write = False  # flag is used to indicate that we haven't initialized output,
-    # a tensor we will use to collect true detections across the entire batch.
 
     for ind in range(batch_size):
+
+        # a tensor we will use to collect true detections across the entire batch.
+
         image_pred = prediction[ind]  # image Tensor
         # confidence threshholding
         # NMS
@@ -204,11 +212,6 @@ def write_results(prediction, confidence, num_classes, nms_conf=0.4):
                 out = torch.cat(seq, 1)
                 output = torch.cat((output, out))
 
-    return output
 
-# NB: Tutorial uses:
-#     try:
-#         return output
-#     except:
-#         return 0
+    return output
 
