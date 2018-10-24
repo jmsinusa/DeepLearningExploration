@@ -15,7 +15,7 @@ from torchvision import transforms, utils
 # from skimage import io
 # from skimage.transform import resize
 
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 
 
 class YOLO(object):
@@ -53,6 +53,34 @@ class YOLO(object):
         # Load class names
         if class_names:
             self.load_class_names(class_names=class_names)
+
+        # Assign colour map
+        self.config_params['colour_map'] = {'person': (198, 0, 0),
+                           'bicycle': (164, 125, 70),
+                           'car': (107, 76, 36),
+                           'motorbike': (164, 125, 70),
+                           'aeroplane': (92, 92, 92),
+                           'bus': (69, 48, 23),
+                           'train': (122, 41, 118),
+                           'truck': (69, 48, 23),
+                           'boat': (69, 48, 23),
+                           'stop sign': (122, 41, 118),
+                           'parking meter': (122, 41, 118),
+                           'bird': (196, 215, 136),
+                           'cat': (176, 172, 59),
+                           'dog': (176, 172, 59),
+                           'horse': (122, 41, 118),
+                           'sheep': (122, 41, 118),
+                           'cow': (122, 41, 118),
+                           'elephant': (122, 41, 118),
+                           'bear': (122, 41, 118),
+                           'zebra': (122, 41, 118),
+                           'giraffe': (122, 41, 118),
+                           'backpack': (117, 157, 209),
+                           'skateboard': (164, 125, 70),
+                           'toilet': (122, 41, 118),
+                           'suitcase': (57, 90, 172),
+                           'tie': (57, 90, 172)}
 
     def load_model(self, config_file="cfg/yolov3.cfg"):
         """
@@ -166,13 +194,18 @@ class YOLO(object):
                 x1, x2, y1, y2 = _crop_to_original_size(x1, x2, y1, y2, original_size)
 
                 # Put these back into this_pred (OPTIONAL)
-                # this_pred[:, 1] = x1
-                # this_pred[:, 2] = y1
-                # this_pred[:, 3] = x2
-                # this_pred[:, 4] = y2
+                this_pred[:, 1] = x1
+                this_pred[:, 2] = y1
+                this_pred[:, 3] = x2
+                this_pred[:, 4] = y2
 
                 # Recall original image
                 img = batch['original_image'][indx]
+
+                #### SET OUT_FILEPATH
+                output_filepath = r'/data/tmp/test_out_%s.png' % batch['img_filename'][indx]
+
+                draw_output_images(img, this_pred, classes_str, self.config_params['colour_map'], output_filepath)
 
                 print('** IMAGE END **')
             print("***BATCH END***")
@@ -202,6 +235,45 @@ class YOLO(object):
         result = self.infer(images)
         self.display_image(images, result)
 
+
+def draw_output_images(img, predictions, classes_str, colour_map, output_filepath):
+    """
+    Draw
+    :param img: PIL image
+    :param predictions: predictions, n x 8
+            0: batch pos (ignore), 1: x1, 2: y1, 3: x2, 4: y2, 5: box confidence, 6: class confidence, 7: class no.
+    :param classes_str: List of class stringss
+    :param class_colours: Dict relating class string to box colour. If not in, use 'default'
+    :param output_filepath: Path to save produced image to.
+    :return: None
+    """
+    # Get coordiantes
+    x1 = predictions[:, 1]
+    y1 = predictions[:, 2]
+    x2 = predictions[:, 3]
+    y2 = predictions[:, 4]
+    boxconf = predictions[:, 5]
+    classconf = predictions[:, 6]
+
+    draw = ImageDraw.Draw(img)
+    for ii in range(x1.shape[0]):
+        points = (x1[ii], y1[ii]), (x2[ii], y1[ii]), (x2[ii], y2[ii]), (x1[ii], y2[ii]), (x1[ii], y1[ii])
+
+        this_class = classes_str[ii]
+        try:
+            colour = colour_map[this_class]
+        except KeyError:
+            colour = (138, 138, 138)
+        #         draw.rectangle((x1[ii],y1[ii],x2[ii],y2[ii]), fill=None, outline=colour)
+        draw.line(points, fill=colour, width=3)
+        text = "%s; %4.3f; %4.3f)" % (this_class, boxconf[ii], classconf[ii])
+        #         font=ImageFont.load_default()
+        font = ImageFont.truetype(font=r'cfg/FreeSansBold.ttf', size=13)
+        text_size = font.getsize(text)
+        draw.rectangle((x1[ii] + 1, y1[ii] + 1, x1[ii] + 1 + text_size[0], y1[ii] + 1 + text_size[1]), fill="black")
+        draw.text((x1[ii], y1[ii]), text, fill='white', font=font)
+
+    img.save(output_filepath)
 
 class ImagesDataset(Dataset):
     """
