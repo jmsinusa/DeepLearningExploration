@@ -164,11 +164,11 @@ class YOLO(object):
                 this_pred = preds[preds[:, 0] == indx].cpu()
                 this_pred = this_pred.numpy()
                 if this_pred.shape[0] == 0:
-                    print("No detections for image", batch["img_filename"][indx])
+                    # print("No detections for image", batch["img_filename"][indx])
                     continue
 
                 # Now do something
-                print("This pred contains", this_pred.shape[0], "objects")
+                # print("This pred contains", this_pred.shape[0], "objects")
                 # Look up the classes detected
                 classes = this_pred[:, 7]
                 classes = classes
@@ -232,8 +232,6 @@ class YOLO(object):
                     os.makedirs(output_dir)
                 filename = os.path.splitext(batch['img_filename'][indx])[0] + '.png'
                 output_filepath = os.path.join(output_dir, filename)
-
-                print(output_filepath)
 
                 draw_output_images(img, this_pred, classes_str, self.config_params['colour_map'], output_filepath)
 
